@@ -1,0 +1,61 @@
+<!-- This is the HTML template for the data query interface. 
+     It contains a form with filters for the data query .-->
+   
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Environmental Data Query</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/Request.css') }}">
+</head>
+<body>
+    <h1>Data Query Interface</h1>
+    <form id="data-query-form">
+        <!-- Time Range Filter -->
+        <div>
+            <label for="start-date">Start Date:</label>
+            <input type="datetime-local" id="start-date" name="start-date" step="1">
+        </div>
+        <div>
+            <label for="end-date">End Date:</label>
+            <input type="datetime-local" id="end-date" name="end-date" step="1">
+        </div>
+        <!-- Country Filter -->
+        <div>
+            <label for="country">Country:</label>
+            <input type="text" id="country" name="country">
+        </div>
+
+        <!-- AQI Range Filter -->
+        <div>
+            <label for="min-aqi">Minimum AQI:</label>
+            <input type="number" id="min-aqi" name="min-aqi" min="0">
+        </div>
+        <div>
+            <label for="max-aqi">Maximum AQI:</label>
+            <input type="number" id="max-aqi" name="max-aqi" min="0">
+        </div>
+
+        <!-- Range Filter -->
+        <div>
+            <label for="range">Range:</label>
+            <select id="range" name="range">
+                <option value="">Select Range</option>
+                <option value="Low">Low</option>
+                <option value="Medium">Medium</option>
+                <option value="High">High</option>
+                <option value="All ranges">All ranges</option> 
+            </select>
+        </div>
+
+        <button type="submit" id="submit-button">Submit Query</button>
+    </form>
+
+    <!-- Results Section -->
+    <div id="loading" style="display: none;">Loading...</div>
+        <!-- Results will be displayed here -->
+    </div>
+
+    <script src="{{ url_for('static', filename='js/Request.js') }}"></script>
+</body>
+</html>
