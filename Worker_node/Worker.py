@@ -8,17 +8,17 @@ import decimal
 # Initialize AWS services
 dynamodb = boto3.resource(
                            'dynamodb',
-                            aws_access_key_id='ASIAXPHZLJMCUPPKDH4N',
-                            aws_secret_access_key='awBfOKJ4zJiWHYy1SY5Zlw4Uwb0/J0nLRw62P4R7',
-                            aws_session_token='FwoGZXIvYXdzELX//////////wEaDEuGmcZV6CFqtVSTayLCAQsQNVrolT3MHb+BdBfVW4nPBNzUFnZmKsYub3Med3Tzy6p5g9U58FAU/kR/wyQTwRFEblmPmDKTWIHizwL3ffSQdkw6OfXTWXRqKagh+wKjEH0a7vPpz+RGL1y+qwkw5jo2sSvdnVQxoO2zR/2WDraqtrWsXu7xNKlRwtY5CgGEbhhemWT08wltz8G2C0CIgubowEfIIOjNdeqlJZjWfuHPALC15Zhp+GWiYPXS1DDU0MpVZ6ZtC4aWyQrkYrQ2Bl0WKMuTzqwGMi2xHVrlp4CoKGrGAiSGi14Yrp/a5/T/TdmOllVUv7fiPaHcGl1R8wVaaG6kcKk=', 
+                            aws_access_key_id='xxx',
+                            aws_secret_access_key='xxx',
+                            aws_session_token='xxx', 
                             region_name='us-east-1'
 )
 
 sqs = boto3.client(         
                            'sqs', 
-                            aws_access_key_id='ASIAXPHZLJMCUPPKDH4N',
-                            aws_secret_access_key='awBfOKJ4zJiWHYy1SY5Zlw4Uwb0/J0nLRw62P4R7',
-                            aws_session_token='FwoGZXIvYXdzELX//////////wEaDEuGmcZV6CFqtVSTayLCAQsQNVrolT3MHb+BdBfVW4nPBNzUFnZmKsYub3Med3Tzy6p5g9U58FAU/kR/wyQTwRFEblmPmDKTWIHizwL3ffSQdkw6OfXTWXRqKagh+wKjEH0a7vPpz+RGL1y+qwkw5jo2sSvdnVQxoO2zR/2WDraqtrWsXu7xNKlRwtY5CgGEbhhemWT08wltz8G2C0CIgubowEfIIOjNdeqlJZjWfuHPALC15Zhp+GWiYPXS1DDU0MpVZ6ZtC4aWyQrkYrQ2Bl0WKMuTzqwGMi2xHVrlp4CoKGrGAiSGi14Yrp/a5/T/TdmOllVUv7fiPaHcGl1R8wVaaG6kcKk=', 
+                            aws_access_key_id='xxx',
+                            aws_secret_access_key='xxx',
+                            aws_session_token='xxx', 
                             region_name='us-east-1'
 )
 
