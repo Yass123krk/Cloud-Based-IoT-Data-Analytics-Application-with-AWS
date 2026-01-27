@@ -1,0 +1,77 @@
+GITIGNORE_CONTENT = """
+# =========================
+# Python
+# =========================
+__pycache__/
+*.py[cod]
+*.pyo
+*.pyd
+*.log
+*.sqlite3
+
+# Virtual environments
+venv/
+env/
+.venv/
+
+# =========================
+# Jupyter Notebook
+# =========================
+.ipynb_checkpoints/
+*.ipynb~
+
+# =========================
+# Flask / Web
+# =========================
+instance/
+.webassets-cache
+
+# =========================
+# AWS / Cloud (CRITICAL)
+# =========================
+.aws/
+*.pem
+*.key
+*.crt
+credentials
+config
+
+# Environment variables
+.env
+.env.*
+*.env
+
+# =========================
+# IDEs & Editors
+# =========================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# =========================
+# OS Files
+# =========================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# =========================
+# Logs & Temporary Files
+# =========================
+logs/
+tmp/
+temp/
+
+# =========================
+# Test Outputs
+# =========================
+*.csv
+*.json
+results/
+output/
+
+# =========================
+# Cloud / Deployment
+# =========================
+Procfile.local
